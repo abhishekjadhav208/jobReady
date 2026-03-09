@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllModules, fetchAllLesson } from "../redux/features/Course/courseSlice";
-import { markLessonComplete, getProgress } from "../redux/features/Progress/ProgressSlice";
+import { markLessonComplete, getProgress } from "../redux/features/Progress/progressSlice";
 import { useParams } from "react-router-dom";
 
 const CourseModule = () => {
