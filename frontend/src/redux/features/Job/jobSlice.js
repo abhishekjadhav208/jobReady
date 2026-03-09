@@ -15,7 +15,7 @@ export const applyToJob = createAsyncThunk("jobs/applyToJob", async (jobId,{ rej
  
   try {
      const response = await axios.post(
-    `http://localhost:5001/api/jobs/${jobId}/apply`,
+    `/api/jobs/${jobId}/apply`,
     {},
     { withCredentials: true },
   );
