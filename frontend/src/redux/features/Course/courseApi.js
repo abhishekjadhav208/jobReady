@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const API = axios.create({
-    baseURL: "http://localhost:5001/api/courses",
+    baseURL: "/api/courses",
 });
 export const getAllCoursesApi=async ()=>{
     const response=await API.get("/all-course");

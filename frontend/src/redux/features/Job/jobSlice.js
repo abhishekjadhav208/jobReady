@@ -31,7 +31,7 @@ export const fetchAppliedJobs = createAsyncThunk(
   async (_, { getState }) => {
     const token = getState().auth.token; // get token from redux
 
-    const res = await axios.get("http://localhost:5001/api/jobs/applied", {
+    const res = await axios.get("/api/jobs/applied", {
       withCredentials: true,
     });
 

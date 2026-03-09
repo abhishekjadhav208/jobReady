@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const completeLessons = async (courseId, lessonId) => {
   const response = await axios.post(
-    "http://localhost:5001/api/progress/complete-lesson",
+    "/api/progress/complete-lesson",
     { courseId, lessonId },
     { withCredentials: true }
   );
@@ -11,7 +11,7 @@ export const completeLessons = async (courseId, lessonId) => {
 };
 
 export const fetchProgress = async () => {
-  const response = await axios.get("http://localhost:5001/api/progress", {
+  const response = await axios.get("/api/progress", {
     withCredentials: true,
   });
   return response.data;

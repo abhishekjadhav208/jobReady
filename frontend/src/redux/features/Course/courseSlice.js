@@ -28,7 +28,7 @@ export const fetchAllLesson = createAsyncThunk(
 );
 
 export const applyToJob=createAsyncThunk("jobs/applyToJob",async (jobId)=>{
-  const response=await axios.post(`http://localhost:5001/api/jobs/${jobId}/apply`,{},{withCredentials:true});
+  const response=await axios.post(`/api/jobs/${jobId}/apply`,{},{withCredentials:true});
  return response.data;
 })
 
