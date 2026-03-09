@@ -1,5 +1,5 @@
 
-import hero from "../assets/heroDesktop.png"
+import hero from "../assets/heroDesktop.jpg"
 const HeroSection = (props) => {
   return (
     <div   style={{
